@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="src.main.java.listeners.TestListener"/>
+    </listeners>
+    <test name="TekArch Employee API Testing">
+        <classes>
+            <class name="src.test.java.employee_api.employee_test.CreateEmployeeData">
+                <methods>
+                    <include name="TC_003_addData"/>
+                </methods>
+            </class>
+            <class name="src.test.java.employee_api.employee_test.DeleteEmployeeData">
+                <methods>
+                    <include name="TC_005_deleteData"/>
+                </methods>
+            </class>
+            <class name="src.test.java.employee_api.employee_test.GetEmployeeData">
+                <methods>
+                    <include name="TC_001_getData"/>
+                </methods>
+            </class>
+            <class name="src.test.java.employee_api.employee_test.UpdateEmployeeData">
+                <methods>
+                    <include name="TC_004_updateData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
